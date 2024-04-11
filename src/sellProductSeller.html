@@ -1,22 +1,32 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Fake Product Identification</title>
+  	<title> Product Authentication System</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/seller.css">
 
 	</head>
 	<body>
+		<button class="backbtn" >
+			<a href="seller.html">Back</a></div>
+		</button>
+		<button id="roleButton" class="role-button" title="Click to change role" >
+			Seller
+		</button>
+		<div id="roleDropdown" class="role-dropdown">
+			<a href="manufacturer.html" class="role-option">Manufacturer</a>
+			<a href="consumer.html" class="role-option">Consumer</a>
+		</div>
 	<section class="ftco-section">
 		<div class="container-fluid px-md-5">
 			<div class="row justify-content-between">
 				<div class="col-md-8 order-md-last">
 					<div class="row">
 						<div class="col-md-6 text-center">
-							<a class="navbar-brand" href="index.html">Fake Product Identification <span>through Blockchain</span></a>
+							<!-- <a class="navbar-brand" href="index.html">Fake Product Identification <span>through Blockchain</span></a> -->
 						</div>
 						<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
 							<form action="#" class="searchform order-lg-last">
@@ -35,16 +45,9 @@
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container-fluid">
 	    
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="fa fa-bars"></span> Menu
-	      </button>
+	     
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav m-auto">
-	        	<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-			  	<li class="nav-item "><a href="manufacturer.html" class="nav-link">Manufacturer</a></li>
-	        	<li class="nav-item"><a href="seller.html" class="nav-link">Seller</a></li>
-	          	<li class="nav-item"><a href="consumer.html" class="nav-link">Consumer</a></li>
-	        </ul>
+	        
 	      </div>
 	    </div>
 	  </nav>
@@ -53,8 +56,11 @@
 	</section>
     <section>
         <div class="container">
-            <h2>Sell Product to Consumer</h2>
-
+			<br>
+			<br>
+            <div class="pagetitle" >Sell Your Product to Consumer Directly!!</div>
+            <br>
+			<br>
 			<section>
 				<div class="container-fluid">
 					<center>
@@ -65,10 +71,13 @@
 			</section>
 
 			<div>
-				<table width="100%">
+				<br>
+				<br>
+				<br>
+				<table width="80%">
 					<tr width="100%">
 						<td width="15%" align="center">
-						<label for="productSN">Product SN:</label>
+						<label for="productSN" >Product SN:</label>
 						</td>
 						<td width = "30%">
 						<input disabled class="form-control" id="productSN" name="productSN" type="text" />
@@ -87,9 +96,11 @@
 
 
               
-              
+              <br>
+			  <br>
               <button type="submit" class="btn btn-warning btn-register" id="register">Sell to Consumer</button>
           </div>
+		  
     </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -100,6 +111,7 @@
   <script src="js/truffle-contract.js"></script>
   <script src="js/sellProductSeller.js"></script>
   <script src="https://unpkg.com/html5-qrcode"></script>
+  <script src="js/seller.js"></script>
   <script>
 	var decodedText = "Enter Product SN";
     function docReady(fn) {
@@ -121,8 +133,8 @@
                 ++countResults;
                 lastResult = decodedText;
                 // Handle on success condition with the decoded message.
-                var audio = new Audio('beep.wav');
-                audio.play();
+                // var audio = new Audio('beep.wav');
+                // audio.play();
                 // console.log(`Scan result ${decodedText}`, decodedResult);
                 document.getElementById('qr-reader-results').innerHTML=decodedText;
 				document.getElementById("productSN").value = decodedText;
