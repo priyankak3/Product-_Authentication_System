@@ -23,11 +23,23 @@ a:hover {
     text-decoration: underline; 
 }
 .Application-name>.Product-identification>.navbar-brand{
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 2rem; 
-    font-weight: medium; 
-    color: #333;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 30px; 
 }
+.navbar-brand span {
+display: block;
+font-size: 12px;
+font-weight: 500;
+color: rgba(0, 0, 0, 0.3); 
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+color: #000; 
+}  
 /* Navigation styling */
 #ftco-nav {
     display: flex;
@@ -73,7 +85,7 @@ a:hover {
   #ftco-nav .nav-link:hover {
    font-weight: 700; 
   }
-  .consumer-section {
+.consumer-section {
     padding: 20px;
     text-align: center;
 }
