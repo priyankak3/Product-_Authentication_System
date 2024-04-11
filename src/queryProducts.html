@@ -6,17 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="css/seller.css">
 
 	</head>
 	<body>
+		<button class="backbtn" >
+			<a href="seller.html">Back</a></div>
+		</button>
+		<button id="roleButton" class="role-button" title="Click to change role" >
+			Seller
+		</button>
+		<div id="roleDropdown" class="role-dropdown">
+			<a href="manufacturer.html" class="role-option">Manufacturer</a>
+			<a href="consumer.html" class="role-option">Consumer</a>
+		</div>
 	<section class="ftco-section">
 		<div class="container-fluid px-md-5">
 			<div class="row justify-content-between">
 				<div class="col-md-8 order-md-last">
 					<div class="row">
 						<div class="col-md-6 text-center">
-							<a class="navbar-brand" href="index.html">Fake Product Identification <span>through Blockchain</span></a>
+		
 						</div>
 						<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
 							<form action="#" class="searchform order-lg-last">
@@ -35,16 +46,9 @@
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container-fluid">
 	    
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="fa fa-bars"></span> Menu
-	      </button>
+	     
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav m-auto">
-	        	<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-			  	<li class="nav-item "><a href="manufacturer.html" class="nav-link">Manufacturer</a></li>
-	        	<li class="nav-item"><a href="seller.html" class="nav-link">Seller</a></li>
-	          	<li class="nav-item"><a href="consumer.html" class="nav-link">Consumer</a></li>
-	        </ul>
+	        
 	      </div>
 	    </div>
 	  </nav>
@@ -55,14 +59,18 @@
 
 	<section>
         <div class="container">
-            <h2>Prodcuts for sale with the seller</h2>
-              
-              <div class="form-group">
+			<br>
+			<br>
+            <div class="pagetitle" >Products you offer for sale</div>
+              <br>
+			  <br>
+              <div class="form-group" id="queryPrd" >
                 <label for="name">Seller Code</label>
                 <input type="text" class="form-control" id="sellerCode" placeholder="Enter Seller Code" name="sellerCode">
               </div>
           
-              
+              <br>
+			  <br>
               
               <button type="submit" class="btn btn-warning btn-register" id="register">Submit</button>
           </div>
@@ -71,8 +79,8 @@
 
     <section>
         <div class="container">
-            <h2>Product Details</h2>
-            <table class="table">
+            <h2 style="text-align: center; color: blueviolet;">Product Details</h2>
+            <table class="table" >
                 <thead>
                     <tr>
                         <th>Product ID</th>
@@ -88,7 +96,7 @@
 
                 </tbody>
             </table>
-            <center><p>Your address is <b id="add"></b></p></center>
+            <center><p style="color: blueviolet;">Your address is <b id="add"></b></p></center>
         </div>
     </section>
 
@@ -99,5 +107,6 @@
   <script src="js/web3.min.js"></script>
   <script src="js/truffle-contract.js"></script>
   <script src="js/productDataApp.js"></script>
+  <script src="js/seller.js"></script>
   </body>
 </html>

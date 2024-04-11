@@ -1,0 +1,153 @@
+html{
+    background-image: url('https://github.com/rohit-raje-786/Fake-product-identification/blob/main/public/assets/images/light-theme.png?raw=true');
+    background-size: cover;
+     /* Adjust color and opacity */
+    /* mix-blend-mode: overlay; */
+}
+.role-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #720db6; /* Adjust color as needed */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Role option styling */
+.role-option {
+    display: block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.role-option:hover {
+    background-color: #720db6;
+    color:aliceblue
+}
+
+.role-dropdown {
+    display: none;
+    position: absolute;
+    top: 9%; /* Directly beneath the button */
+    right: 0; /* Align the dropdown with the right side of the button */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.pagetitle{
+    color: #720db6;
+    font-weight: bold;
+    font-size: 2em;
+}
+/* Navbar navigation */
+.navbar-nav {
+    display: flex; /* Makes the unordered list a flex container */
+    justify-content: center; /* Centers the list items */
+    list-style: none; /* Removes the default list style */
+    padding: 0; /* Removes default padding */
+    
+}
+.nav-link {
+    color:whitesmoke; /* Replace `#your_color_here` with the desired color code */
+}
+/* Navigation list items */
+.navbar-nav .nav-item {
+    margin-right: 10px; /* Adds space between list items */
+    width: 40%; /* Each list item will take up half of the page width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #720db6;
+    border-radius: 5px;
+    background-color: #720db6;
+    color: aliceblue;
+     min-height: 280px;
+}
+
+.container-fluid{
+    /* border: 2px solid #720db6;
+    border-radius: 5px; */
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    /* margin-left:35% */
+    margin:0 auto;
+    display:block;
+}
+
+/* Adjust spacing */
+.navbar-nav .nav-item:last-child {
+    margin-right: 0; /* Remove margin-right from the last list item */
+}
+
+/* Link info div styling */
+.linkinfo {
+    padding: 5px; /* Add padding for a consistent look */
+    margin: 0; /* Remove any default margin */
+    text-align: center;
+}
+
+tr{
+    color: #720db6;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#register{
+    background-color: #720db6;
+    color: aliceblue;
+    font-size: 1em;
+    border-radius:5px ;
+    border-color: #720db6;
+    font-family: 'Times New Roman', Times, serif;
+    
+    margin:0 auto;
+    display:block;
+}
+
+table{
+    margin-left: 18%;
+    
+}
+
+.backbtn{
+    background-color: #720db6; /* Adjust color as needed */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.backbtn a{
+    color:white;
+}
+
+#queryPrd{
+    color:#720db6;
+    margin-left:40%;
+    
+}
+
+tr{
+    color: #720db6;
+}
+
+th{
+    background-color: hsl(276, 87%, 38%);
+    color: whitesmoke;
+    padding: 10px;
+}

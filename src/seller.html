@@ -1,22 +1,30 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Fake Product Identification</title>
+  	<title> Product Authentication System</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="css/seller.css">
 
 	</head>
 	<body>
+		<button id="roleButton" class="role-button" title="Click to change role" >
+			Seller
+		</button>
+		<div id="roleDropdown" class="role-dropdown">
+			<a href="manufacturer.html" class="role-option">Manufacturer</a>
+			<a href="consumer.html" class="role-option">Consumer</a>
+		</div>
 	<section class="ftco-section">
 		<div class="container-fluid px-md-5">
 			<div class="row justify-content-between">
 				<div class="col-md-8 order-md-last">
 					<div class="row">
 						<div class="col-md-6 text-center">
-							<a class="navbar-brand" href="index.html">Fake Product Identification <span>through Blockchain</span></a>
+							<!-- <a class="navbar-brand" href="index.html">Fake Product Identification <span>through Blockchain</span></a> -->
 						</div>
 						<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
 							<form action="#" class="searchform order-lg-last">
@@ -35,29 +43,34 @@
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container-fluid">
 	    
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="fa fa-bars"></span> Menu
-	      </button>
+	      </button> -->
+		  <br>
+		  <br>
+		  <section>
+			<div class="container">
+			  <div class="pagetitle" >Discover, Sell, and Shop with Confidence</div>
+			  
+			</section>
+			<br>
+			<br>
+			<br>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav m-auto">
-	        	<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	        	<li class="nav-item"><a href="sellProductSeller.html" class="nav-link">Sell Product To Consumer</a></li>
-            <li class="nav-item"><a href="queryProducts.html" class="nav-link">Products For sale</a></li>
+
+	        	<li class="nav-item"><div class="linkinfo">
+					<p>Use this option to sell your products directly to consumers. To list your products, simply upload an image of your QR code and customer code. These codes help consumers verify the authenticity and details of your products. By providing accurate and easy-to-access information, you can build trust with your customers and increase sales. Make sure your codes are clear and legible for the best experience for your buyers.</p>
+					<br><a href="sellProductSeller.html" class="nav-link" >Click to Sell Product To Consumer</a></div></li>
+            <li class="nav-item"><div class="linkinfo"> View a list of products offered to you by manufacturers. To access these products, simply enter your unique seller code. This code ensures that the products displayed are specific to your business and tailored to your needs. You will be able to see details about each product, including specifications, pricing, and availability. This personalized list makes it easy for you to find the products you want to stock and sell to your customers, streamlining your inventory management and boosting your business's efficiency.
+				<br><br><a href="queryProducts.html" class="nav-link">Check Your Products</a></div></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
 	
-    <section>
-      <div class="container">
-        <h2>
-        Seller
-        </h2>
-        <h3>
-        Go to navigation bar to perform operations.
-        </h3>
-      </section>
+    
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/popper.js"></script>
@@ -66,6 +79,7 @@
   <script src="js/web3.min.js"></script>
   <script src="js/truffle-contract.js"></script>
   <script src="js/sellerDataApp.js"></script>
+  <script src="js/seller.js"></script>
   </body>
 </html>
 
