@@ -22,7 +22,7 @@ a:hover {
     
     text-decoration: underline; 
 }
-.Application-name>.Product-identification>.name{
+.Application-name>.Product-identification>.navbar-brand{
     font-family: 'Montserrat', sans-serif; 
     font-size: 2rem; 
     font-weight: medium; 
