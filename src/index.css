@@ -1,0 +1,145 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(201, 197, 213);
+    background-image: url('https://github.com/rohit-raje-786/Fake-product-identification/blob/main/public/assets/images/light-theme.png?raw=true'); 
+    background-size: cover; 
+}
+
+.Application-name{
+    display: flex;
+    justify-content: center;
+    margin: 5px 5px;
+    margin-top: 10px;
+    padding:10px 0;
+    text-decoration:none;
+}
+a{
+    text-decoration:none;
+}
+a:hover {
+    
+    text-decoration: underline; 
+}
+.Application-name>.Product-identification>.name{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 2rem; 
+    font-weight: medium; 
+    color: #333;
+}
+/* Navigation styling */
+#ftco-nav {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+    padding:10px 0;
+    font-size: 1.3rem; 
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  #ftco-nav .navbar-nav {
+    display: flex; /* Change to flex display */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #ftco-nav .nav-item {
+    margin-right: 5rem;
+  }
+  #ftco-nav .nav-link {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  
+  #ftco-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #a555a9;
+    transition: width 0.3s ease;
+  }
+  
+  #ftco-nav .nav-item:hover .nav-link::after {
+    width: 70%;
+  }
+  
+  #ftco-nav .nav-link:hover {
+   font-weight: 700; 
+  }
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px; } }
+@media (min-width: 768px) {
+    .container {
+      max-width: 720px; } }
+@media (min-width: 992px) {
+    .container {
+      max-width: 960px; } }
+@media (min-width: 1200px) {
+    .container {
+      max-width: 1140px; } 
+}    
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+ }
+
+
+/* Content styling */
+.content-container{
+    display: flex;
+    width: 100%;
+    margin-top: 70px;
+
+    padding: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.content {
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+ 
+    justify-content: center;
+    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.content h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+.content-container >.img-content{
+    padding: 10px;
+    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); */
+}
+.footer{
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

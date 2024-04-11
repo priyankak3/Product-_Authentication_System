@@ -41,21 +41,17 @@ App = {
         var productInstance;
         window.ethereum.enable();
         web3.eth.getAccounts(function(error,accounts){
-
             if(error) {
                 console.log(error);
             }
-
             var account=accounts[0];
             // console.log(account);
-
             App.contracts.product.deployed().then(function(instance){
 
                 productInstance=instance;
                 return productInstance.queryProductsList(web3.fromAscii(sellerCode),{from:account});
 
             }).then(function(result){
-                
                 //console.log()
                 var productIds=[];
                 var productSNs=[];
@@ -65,20 +61,16 @@ App = {
                 var productStatus=[];
 
                 // console.log(result);
-                
                 for(var k=0;k<result[0].length;k++){
                     productIds[k]=result[0][k];
                 }
-
                 for(var k=0;k<result[1].length;k++){
                     productSNs[k]=web3.toAscii(result[1][k]);
 
                 }
-
                 for(var k=0;k<result[2].length;k++){
                     productNames[k]=web3.toAscii(result[2][k]);
                 }
-
                 for(var k=0;k<result[3].length;k++){
                     productBrands[k]=web3.toAscii(result[3][k]);
                 }
@@ -86,11 +78,9 @@ App = {
                 for(var k=0;k<result[4].length;k++){
                     productPrices[k]=result[4][k];
                 }
-
                 for(var k=0;k<result[5].length;k++){
                     productStatus[k]=web3.toAscii(result[5][k]);
                 }
-
                 var t= "";
                 document.getElementById('logdata').innerHTML = t;
                 for(var i=0;i<result[0].length;i++) {
