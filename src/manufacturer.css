@@ -125,25 +125,36 @@ a:hover {
     color: #333;
 }
 
-.section-description {
-    font-size: 1.5rem;
-    color: #666;
-    margin-bottom: 20px;
-}
-
 .section-operations {
-    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    list-style: none;
     padding: 0;
+    color: white;
 }
 
-.section-operations li {
-    font-size: 1.5rem;
-    color: #888;
-    margin-bottom: 10px;
+.section-operations .nav-item {
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    padding: 20px;
+    background-color:#720db6;
 }
-.section-operations li .nav-link {
-    color: #333;
+
+.section-operations .linkinfo {
+    text-align: left;
+}
+
+.section-operations .linkinfo p {
+    margin-bottom: 15px;
+}
+
+.section-operations .nav-link {
+    color: white;
     text-decoration: none;
-    transition: color 0.3s ease;
-    position: relative;
+    font-weight: medium;
+}
+
+.section-operations .nav-link:hover {
+    text-decoration: underline;
 }
